@@ -12,6 +12,10 @@
 
 @interface FRBViewController ()
 
+@property(nonatomic, strong) NSArray *words;
+@property(weak, nonatomic) IBOutlet UITextField *searchTextField;
+@property(weak, nonatomic) IBOutlet UIButton *searchButton;
+
 @end
 
 @implementation FRBViewController
@@ -20,13 +24,29 @@
   [super viewDidLoad];
 
   FRBJsonParser *parser = [[FRBJsonParser alloc] init];
-  NSArray *words = [parser
-      wordsFromJson:@[ @{
-        @"english" : @"affirmative",
-        @"furbish" : @"ee"
-      } ]];
+  self.words = [parser wordsFromJson:@[
+    @{
+      @"english" : @"affirmative",
+      @"furbish" : @"ee"
+    },
+    @{
+      @"english" : @"baby",
+      @"furbish" : @"bay-bee"
+    }
+  ]];
+}
 
-  NSLog(@"words: %@", words);
+- (IBAction)search:(id)sender {
+  NSString *stringToTranslate = self.searchTextField.text;
+
+  for (FRBWord *word in self.words) {
+    if ([word.english isEqualToString:stringToTranslate]) {
+      NSLog(@"%@ = %@", stringToTranslate, word.furbish);
+      return;
+    }
+  }
+
+  NSLog(@"Not found");
 }
 
 @end

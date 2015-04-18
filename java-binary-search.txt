@@ -1,0 +1,42 @@
+class Blah
+{
+  public static void main(String[] args)
+  {
+    List<Word> list = new ArrayList<Word>();
+    list.add(new Word("affirmative", "ee"));
+    list.add(new Word("uncle", "oo-kah"));
+    list.add(new Word("very", "mee-mee"));
+
+    Comparator<Word> c = new Comparator<Word>() {
+      public int compare(Word word1, Word word2) {
+        return word2.getEnglish().compareTo(word2.getEnglish());
+      }
+    };
+
+    int index = Collections.binarySearch(list, new Word("uncle", null), c);
+    System.out.println(index);    // Output: 1
+    System.out.println(list[index].furbish);
+
+    index = Collections.binarySearch(list, new Word("affirmative", null), c);
+    System.out.println(index);    // Output: 0
+    System.out.println(list[index].furbish);
+
+    index = Collections.binarySearch(l, new Word(42, null), c);
+    System.out.println(index);    // Output: some negavtive number
+                                  // See javadoc for meaning of return value.
+  }
+}
+
+class Word {
+  private String english;
+  private String furbish;
+
+  public Word(String english, String furbish) {
+    this.english = english;
+    this.furbish = furbish;
+  }
+
+  public String getEnglish() {
+    return String.valueOf(english);
+  }
+}
