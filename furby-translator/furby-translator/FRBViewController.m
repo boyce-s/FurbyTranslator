@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Harlan Kellaway. All rights reserved.
 //
 
+#import "FRBJsonParser.h"
+#import "FRBWord.h"
 #import "FRBViewController.h"
 
 @interface FRBViewController ()
@@ -16,12 +18,15 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+  FRBJsonParser *parser = [[FRBJsonParser alloc] init];
+  NSArray *words = [parser
+      wordsFromJson:@[ @{
+        @"english" : @"affirmative",
+        @"furbish" : @"ee"
+      } ]];
+
+  NSLog(@"words: %@", words);
 }
 
 @end

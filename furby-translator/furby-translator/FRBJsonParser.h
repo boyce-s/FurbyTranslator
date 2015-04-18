@@ -17,6 +17,6 @@
  *
  *  @return Array of Words
  */
-- (NSArray *)jsonToWords:(NSString *)json;
+- (NSArray *)wordsFromJson:(id)json;
 
 @end
