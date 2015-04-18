@@ -8,6 +8,9 @@ import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
 
+    Word affirm = new Word("affirmative", "ee");
+    Word again = new Word("again", "koh-koh");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
