@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0E6393E3401ED647FF8FC54 /* libPods-furby-translator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2438A1F5F2CCB1C6E30E6752 /* libPods-furby-translator.a */; };
 		DC4AFC7F1AE2DADB000B2CC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC7E1AE2DADB000B2CC4 /* main.m */; };
 		DC4AFC821AE2DADC000B2CC4 /* FRBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC811AE2DADC000B2CC4 /* FRBAppDelegate.m */; };
 		DC4AFC851AE2DADC000B2CC4 /* FRBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC841AE2DADC000B2CC4 /* FRBViewController.m */; };
@@ -14,6 +15,7 @@
 		DC4AFC8A1AE2DADC000B2CC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4AFC891AE2DADC000B2CC4 /* Images.xcassets */; };
 		DC4AFC8D1AE2DADC000B2CC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4AFC8B1AE2DADC000B2CC4 /* LaunchScreen.xib */; };
 		DC4AFC991AE2DADC000B2CC4 /* furby_translatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC981AE2DADC000B2CC4 /* furby_translatorTests.m */; };
+		DC4AFCA41AE2DCA9000B2CC4 /* FRBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCA31AE2DCA9000B2CC4 /* FRBJsonParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2438A1F5F2CCB1C6E30E6752 /* libPods-furby-translator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-furby-translator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F287BAB9F0B557DBA80C77 /* Pods-furby-translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-furby-translator.release.xcconfig"; path = "Pods/Target Support Files/Pods-furby-translator/Pods-furby-translator.release.xcconfig"; sourceTree = "<group>"; };
 		DC4AFC791AE2DADB000B2CC4 /* furby-translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "furby-translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4AFC7D1AE2DADB000B2CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4AFC7E1AE2DADB000B2CC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,9 @@
 		DC4AFC921AE2DADC000B2CC4 /* furby-translatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "furby-translatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4AFC971AE2DADC000B2CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4AFC981AE2DADC000B2CC4 /* furby_translatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = furby_translatorTests.m; sourceTree = "<group>"; };
+		DC4AFCA21AE2DCA9000B2CC4 /* FRBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBJsonParser.h; sourceTree = "<group>"; };
+		DC4AFCA31AE2DCA9000B2CC4 /* FRBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBJsonParser.m; sourceTree = "<group>"; };
+		E6B0D4FBB3408C63D090EE22 /* Pods-furby-translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-furby-translator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-furby-translator/Pods-furby-translator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E6393E3401ED647FF8FC54 /* libPods-furby-translator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C7DD6912706C50B1F8BC35E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2438A1F5F2CCB1C6E30E6752 /* libPods-furby-translator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B20F28D07C59295F743C4055 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6B0D4FBB3408C63D090EE22 /* Pods-furby-translator.debug.xcconfig */,
+				81F287BAB9F0B557DBA80C77 /* Pods-furby-translator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC4AFC701AE2DADB000B2CC4 = {
 			isa = PBXGroup;
 			children = (
 				DC4AFC7B1AE2DADB000B2CC4 /* furby-translator */,
 				DC4AFC951AE2DADC000B2CC4 /* furby-translatorTests */,
 				DC4AFC7A1AE2DADB000B2CC4 /* Products */,
+				B20F28D07C59295F743C4055 /* Pods */,
+				2C7DD6912706C50B1F8BC35E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +112,8 @@
 				DC4AFC811AE2DADC000B2CC4 /* FRBAppDelegate.m */,
 				DC4AFC831AE2DADC000B2CC4 /* FRBViewController.h */,
 				DC4AFC841AE2DADC000B2CC4 /* FRBViewController.m */,
+				DC4AFCA21AE2DCA9000B2CC4 /* FRBJsonParser.h */,
+				DC4AFCA31AE2DCA9000B2CC4 /* FRBJsonParser.m */,
 				DC4AFC861AE2DADC000B2CC4 /* Main.storyboard */,
 				DC4AFC891AE2DADC000B2CC4 /* Images.xcassets */,
 				DC4AFC8B1AE2DADC000B2CC4 /* LaunchScreen.xib */,
@@ -126,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC4AFC9C1AE2DADC000B2CC4 /* Build configuration list for PBXNativeTarget "furby-translator" */;
 			buildPhases = (
+				7785E86E13D050265776FC4B /* Check Pods Manifest.lock */,
 				DC4AFC751AE2DADB000B2CC4 /* Sources */,
 				DC4AFC761AE2DADB000B2CC4 /* Frameworks */,
 				DC4AFC771AE2DADB000B2CC4 /* Resources */,
+				0ED0E4566E5A48BD9E5383AD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +246,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0ED0E4566E5A48BD9E5383AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-furby-translator/Pods-furby-translator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7785E86E13D050265776FC4B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC4AFC751AE2DADB000B2CC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -223,6 +287,7 @@
 				DC4AFC851AE2DADC000B2CC4 /* FRBViewController.m in Sources */,
 				DC4AFC821AE2DADC000B2CC4 /* FRBAppDelegate.m in Sources */,
 				DC4AFC7F1AE2DADB000B2CC4 /* main.m in Sources */,
+				DC4AFCA41AE2DCA9000B2CC4 /* FRBJsonParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +409,7 @@
 		};
 		DC4AFC9D1AE2DADC000B2CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B0D4FBB3408C63D090EE22 /* Pods-furby-translator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "furby-translator/Info.plist";
@@ -354,6 +420,7 @@
 		};
 		DC4AFC9E1AE2DADC000B2CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81F287BAB9F0B557DBA80C77 /* Pods-furby-translator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "furby-translator/Info.plist";
@@ -415,6 +482,7 @@
 				DC4AFC9E1AE2DADC000B2CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC4AFC9F1AE2DADC000B2CC4 /* Build configuration list for PBXNativeTarget "furby-translatorTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +491,7 @@
 				DC4AFCA11AE2DADC000B2CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
