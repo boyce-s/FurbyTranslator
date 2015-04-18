@@ -1,3 +1,5 @@
+package boycese.cs.simmons.edu.furbytranslator;
+
 /**
  * Created by susanboyce on 4/18/15.
  */
