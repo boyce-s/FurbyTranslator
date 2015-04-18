@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">FurbyTranslator</string>
-
-    <string name="app_title">Furbish Translator</string>
-    <string name="action_settings">Settings</string>
-    <string name="submit_button">Submit</string>
-</resources>
