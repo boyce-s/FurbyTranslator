@@ -1,5 +1,8 @@
 package boycese.cs.simmons.edu.furbytranslator;
 
+/**
+ * Created by susanboyce on 4/18/15.
+ */
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import java.util.*;
@@ -17,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
     Word affirm = new Word("affirmative", "ee");
     Word again = new Word("again", "koh-koh");
     Word baby = new Word("baby", "bay-bee");
-    ArrayList<Word> testList = new ArrayList<Word>();
+    List<Word> testList = new ArrayList<>();
 
 
     JSON_parse parser = new JSON_parse();
@@ -65,24 +68,55 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void translate(View view){
-     /*
-        finds the user's English search term from the View and searches for it in the dictionary
-     */
-        String searchTerm = "";
+    // event onClick for submit button
+
+    public void submit(View view) {
+
+        System.out.println("hello world");
+    /*
+        finds the user's English search term from the View, calls search, prints to screen
+    */
         EditText userInputA = (EditText)findViewById(R.id.searchInput);
         String userInput = userInputA.getText().toString();
-         // search for the userInput in the array on Word.english
-        int index = Collections.binarySearch(testList, userInput);
 
+        TextView translation = (TextView)findViewById(R.id.translation_result);
 
-         // access (& return) Word.furbish for the Word.english that the above matched
+        String result = translate(userInput);
+        System.out.println(result);
 
-
-         // otherwise return not found
-         // display the translation on the screen
+        // display the translation on the screen
+        if(result == null) {
+            translation.setText("Not found");
+        }
+        else {
+            translation.setText(result);
+        }
 
     }
+
+    public String translate(String userInput){
+     /*
+        searches for user's search term in the dictionary
+     */
+
+         // search for the userInput in the array on Word.english
+
+        Comparator<Word> comp = new Comparator<Word>() {
+            @Override
+            public int compare(Word word1, Word word2) {
+                return word1.getEnglish().compareTo(word2.getEnglish());
+            }
+        };
+
+        int index = Collections.binarySearch(testList, new Word(userInput, null), comp);
+        // access (& return) Word.furbish for the Word.english that the above matched
+        // otherwise return not found
+        if(index < 0) { return null; }
+        else { return testList.get(index).getFurbish(); }
+
+    }
+
+
 
 
 }

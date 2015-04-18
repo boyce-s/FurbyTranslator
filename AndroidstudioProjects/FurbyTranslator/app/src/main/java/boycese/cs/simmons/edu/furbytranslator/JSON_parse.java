@@ -31,8 +31,7 @@ public class JSON_parse {
             }
             reader.endObject();
             return words;
-        } catch (IOException ex) {
-        }
+        } catch (IOException ex) { }
 
         return words;
     }
@@ -47,16 +46,16 @@ public class JSON_parse {
             if (name.equals("english")) {
                 english = reader.nextString();
             }
-            String name2 = reader.nextName();
-            if (name2.equals("furbish")) {
+            else if (name.equals("furbish")) {
                 furbish = reader.nextString();
             }
             else{
                 reader.skipValue();
             }
-            return new Word(english, furbish);
+            //String name2 = reader.nextName();
         }
         reader.endObject();
+        return new Word(english, furbish);
     }
 
 }

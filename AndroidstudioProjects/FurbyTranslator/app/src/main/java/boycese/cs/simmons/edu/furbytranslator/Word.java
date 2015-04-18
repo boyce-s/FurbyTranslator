@@ -25,7 +25,7 @@ public class Word implements Comparable<Word> {
         int diff = 0;
         int i = 0;
         do{
-            diff = this.english.charAt(i) - compWord.english.charAt(i));
+            diff = this.english.charAt(i) - compWord.english.charAt(i);
             i++;
         }while(diff == 0);
         return diff;
