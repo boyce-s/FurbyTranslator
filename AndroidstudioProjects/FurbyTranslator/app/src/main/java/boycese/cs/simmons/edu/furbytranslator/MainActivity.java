@@ -4,12 +4,17 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
 
     Word affirm = new Word("affirmative", "ee");
     Word again = new Word("again", "koh-koh");
+    Word baby = new Word("baby", "bay-bee");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,5 +43,13 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void translate(View view){
+     /*
+        finds the user's English search term from the View and searches for it in the dictionary
+     */
+        String searchTerm = "";
+        
     }
 }
