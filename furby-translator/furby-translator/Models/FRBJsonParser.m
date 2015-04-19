@@ -7,25 +7,25 @@
 //
 
 #import "FRBJsonParser.h"
-#import "FRBWord.h"
+#import "FRBKimonoResponse.h"
 
 #import <Mantle/Mantle.h>
 
 @implementation FRBJsonParser
 
 - (NSArray *)wordsFromJson:(id)json {
-  NSParameterAssert([json isKindOfClass:[NSArray class]]);
 
   NSError *error;
-  NSArray *words = [MTLJSONAdapter modelsOfClass:[FRBWord class]
-                                   fromJSONArray:json
-                                           error:&error];
+  FRBKimonoResponse *response =
+      [MTLJSONAdapter modelOfClass:[FRBKimonoResponse class]
+                fromJSONDictionary:json
+                             error:&error];
 
   if (error) {
     return nil;
   }
 
-  return words;
+  return response.kimonoCollection[@"collection1"];
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  FRBWord.h
+//  FRBKimonoResponse.h
 //  furby-translator
 //
 //  Created by Harlan Kellaway on 4/18/15.
@@ -8,9 +8,8 @@
 
 #import <Mantle/Mantle.h>
 
-@interface FRBWord : MTLModel <MTLJSONSerializing>
+@interface FRBKimonoResponse : MTLModel <MTLJSONSerializing>
 
-@property(nonatomic, copy) NSString *english;
-@property(nonatomic, copy) NSString *furbish;
+@property(nonatomic, strong) NSDictionary *kimonoCollection;
 
 @end
