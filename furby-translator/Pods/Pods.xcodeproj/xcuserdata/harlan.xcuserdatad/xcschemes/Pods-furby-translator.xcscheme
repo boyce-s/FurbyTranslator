@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C7D69115E4E941BF6BCF2CD"
+               BlueprintIdentifier = "B3C43DC8F827A5A664A55002"
                BuildableName = "libPods-furby-translator.a"
                BlueprintName = "Pods-furby-translator"
                ReferencedContainer = "container:Pods.xcodeproj">

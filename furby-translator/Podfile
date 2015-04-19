@@ -3,7 +3,8 @@
 
 target 'furby-translator' do
 
-pod 'Mantle', '~> 1.5'
+pod 'HNKServerFacade', '~> 0.2'
+pod 'Mantle', '~> 1.0'
 
 end
 

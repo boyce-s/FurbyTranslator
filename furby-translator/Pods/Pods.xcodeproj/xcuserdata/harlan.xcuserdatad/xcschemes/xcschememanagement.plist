@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-furby-translator-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-furby-translator-HNKServerFacade.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-furby-translator-Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2FB56226F0806F8CA137C42A</key>
+		<key>9F92FB182048C4B39040FC0D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C7D69115E4E941BF6BCF2CD</key>
+		<key>B3C43DC8F827A5A664A55002</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C1CD0C9DE44C2AE0EC36D4B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F17D780F5BFB36EA6E44FC1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

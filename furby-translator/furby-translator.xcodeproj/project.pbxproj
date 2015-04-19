@@ -17,6 +17,7 @@
 		DC4AFC991AE2DADC000B2CC4 /* furby_translatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC981AE2DADC000B2CC4 /* furby_translatorTests.m */; };
 		DC4AFCA41AE2DCA9000B2CC4 /* FRBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCA31AE2DCA9000B2CC4 /* FRBJsonParser.m */; };
 		DC4AFCA71AE2DF57000B2CC4 /* FRBWord.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCA61AE2DF57000B2CC4 /* FRBWord.m */; };
+		DC4AFCAA1AE33DE3000B2CC4 /* FRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCA91AE33DE3000B2CC4 /* FRBServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		DC4AFCA31AE2DCA9000B2CC4 /* FRBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBJsonParser.m; sourceTree = "<group>"; };
 		DC4AFCA51AE2DF57000B2CC4 /* FRBWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWord.h; sourceTree = "<group>"; };
 		DC4AFCA61AE2DF57000B2CC4 /* FRBWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBWord.m; sourceTree = "<group>"; };
+		DC4AFCA81AE33DE3000B2CC4 /* FRBServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBServer.h; sourceTree = "<group>"; };
+		DC4AFCA91AE33DE3000B2CC4 /* FRBServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBServer.m; sourceTree = "<group>"; };
 		E6B0D4FBB3408C63D090EE22 /* Pods-furby-translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-furby-translator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-furby-translator/Pods-furby-translator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +126,8 @@
 				DC4AFC891AE2DADC000B2CC4 /* Images.xcassets */,
 				DC4AFC8B1AE2DADC000B2CC4 /* LaunchScreen.xib */,
 				DC4AFC7C1AE2DADB000B2CC4 /* Supporting Files */,
+				DC4AFCA81AE33DE3000B2CC4 /* FRBServer.h */,
+				DC4AFCA91AE33DE3000B2CC4 /* FRBServer.m */,
 			);
 			path = "furby-translator";
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				DC4AFC7F1AE2DADB000B2CC4 /* main.m in Sources */,
 				DC4AFCA41AE2DCA9000B2CC4 /* FRBJsonParser.m in Sources */,
 				DC4AFCA71AE2DF57000B2CC4 /* FRBWord.m in Sources */,
+				DC4AFCAA1AE33DE3000B2CC4 /* FRBServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
