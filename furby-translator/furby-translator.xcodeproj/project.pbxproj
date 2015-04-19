@@ -10,14 +10,14 @@
 		D0E6393E3401ED647FF8FC54 /* libPods-furby-translator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2438A1F5F2CCB1C6E30E6752 /* libPods-furby-translator.a */; };
 		DC4AFC7F1AE2DADB000B2CC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC7E1AE2DADB000B2CC4 /* main.m */; };
 		DC4AFC821AE2DADC000B2CC4 /* FRBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC811AE2DADC000B2CC4 /* FRBAppDelegate.m */; };
-		DC4AFC851AE2DADC000B2CC4 /* FRBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC841AE2DADC000B2CC4 /* FRBViewController.m */; };
 		DC4AFC881AE2DADC000B2CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4AFC861AE2DADC000B2CC4 /* Main.storyboard */; };
 		DC4AFC8A1AE2DADC000B2CC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4AFC891AE2DADC000B2CC4 /* Images.xcassets */; };
 		DC4AFC8D1AE2DADC000B2CC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4AFC8B1AE2DADC000B2CC4 /* LaunchScreen.xib */; };
 		DC4AFC991AE2DADC000B2CC4 /* furby_translatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFC981AE2DADC000B2CC4 /* furby_translatorTests.m */; };
-		DC4AFCA41AE2DCA9000B2CC4 /* FRBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCA31AE2DCA9000B2CC4 /* FRBJsonParser.m */; };
-		DC4AFCA71AE2DF57000B2CC4 /* FRBWord.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCA61AE2DF57000B2CC4 /* FRBWord.m */; };
-		DC4AFCAA1AE33DE3000B2CC4 /* FRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCA91AE33DE3000B2CC4 /* FRBServer.m */; };
+		DC4AFCB21AE33E81000B2CC4 /* FRBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCAD1AE33E81000B2CC4 /* FRBJsonParser.m */; };
+		DC4AFCB31AE33E81000B2CC4 /* FRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCAF1AE33E81000B2CC4 /* FRBServer.m */; };
+		DC4AFCB41AE33E81000B2CC4 /* FRBWord.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCB11AE33E81000B2CC4 /* FRBWord.m */; };
+		DC4AFCB81AE33EDF000B2CC4 /* FRBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCB71AE33EDF000B2CC4 /* FRBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,20 +38,20 @@
 		DC4AFC7E1AE2DADB000B2CC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC4AFC801AE2DADB000B2CC4 /* FRBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRBAppDelegate.h; sourceTree = "<group>"; };
 		DC4AFC811AE2DADC000B2CC4 /* FRBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRBAppDelegate.m; sourceTree = "<group>"; };
-		DC4AFC831AE2DADC000B2CC4 /* FRBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRBViewController.h; sourceTree = "<group>"; };
-		DC4AFC841AE2DADC000B2CC4 /* FRBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRBViewController.m; sourceTree = "<group>"; };
 		DC4AFC871AE2DADC000B2CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC4AFC891AE2DADC000B2CC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DC4AFC8C1AE2DADC000B2CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DC4AFC921AE2DADC000B2CC4 /* furby-translatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "furby-translatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4AFC971AE2DADC000B2CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4AFC981AE2DADC000B2CC4 /* furby_translatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = furby_translatorTests.m; sourceTree = "<group>"; };
-		DC4AFCA21AE2DCA9000B2CC4 /* FRBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBJsonParser.h; sourceTree = "<group>"; };
-		DC4AFCA31AE2DCA9000B2CC4 /* FRBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBJsonParser.m; sourceTree = "<group>"; };
-		DC4AFCA51AE2DF57000B2CC4 /* FRBWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWord.h; sourceTree = "<group>"; };
-		DC4AFCA61AE2DF57000B2CC4 /* FRBWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBWord.m; sourceTree = "<group>"; };
-		DC4AFCA81AE33DE3000B2CC4 /* FRBServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBServer.h; sourceTree = "<group>"; };
-		DC4AFCA91AE33DE3000B2CC4 /* FRBServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBServer.m; sourceTree = "<group>"; };
+		DC4AFCAC1AE33E81000B2CC4 /* FRBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBJsonParser.h; sourceTree = "<group>"; };
+		DC4AFCAD1AE33E81000B2CC4 /* FRBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBJsonParser.m; sourceTree = "<group>"; };
+		DC4AFCAE1AE33E81000B2CC4 /* FRBServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBServer.h; sourceTree = "<group>"; };
+		DC4AFCAF1AE33E81000B2CC4 /* FRBServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBServer.m; sourceTree = "<group>"; };
+		DC4AFCB01AE33E81000B2CC4 /* FRBWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWord.h; sourceTree = "<group>"; };
+		DC4AFCB11AE33E81000B2CC4 /* FRBWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBWord.m; sourceTree = "<group>"; };
+		DC4AFCB61AE33EDF000B2CC4 /* FRBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBViewController.h; sourceTree = "<group>"; };
+		DC4AFCB71AE33EDF000B2CC4 /* FRBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBViewController.m; sourceTree = "<group>"; };
 		E6B0D4FBB3408C63D090EE22 /* Pods-furby-translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-furby-translator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-furby-translator/Pods-furby-translator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,20 +114,14 @@
 		DC4AFC7B1AE2DADB000B2CC4 /* furby-translator */ = {
 			isa = PBXGroup;
 			children = (
+				DC4AFCAB1AE33E81000B2CC4 /* Models */,
+				DC4AFCB51AE33EDF000B2CC4 /* ViewControllers */,
 				DC4AFC801AE2DADB000B2CC4 /* FRBAppDelegate.h */,
 				DC4AFC811AE2DADC000B2CC4 /* FRBAppDelegate.m */,
-				DC4AFC831AE2DADC000B2CC4 /* FRBViewController.h */,
-				DC4AFC841AE2DADC000B2CC4 /* FRBViewController.m */,
-				DC4AFCA21AE2DCA9000B2CC4 /* FRBJsonParser.h */,
-				DC4AFCA31AE2DCA9000B2CC4 /* FRBJsonParser.m */,
-				DC4AFCA51AE2DF57000B2CC4 /* FRBWord.h */,
-				DC4AFCA61AE2DF57000B2CC4 /* FRBWord.m */,
 				DC4AFC861AE2DADC000B2CC4 /* Main.storyboard */,
 				DC4AFC891AE2DADC000B2CC4 /* Images.xcassets */,
 				DC4AFC8B1AE2DADC000B2CC4 /* LaunchScreen.xib */,
 				DC4AFC7C1AE2DADB000B2CC4 /* Supporting Files */,
-				DC4AFCA81AE33DE3000B2CC4 /* FRBServer.h */,
-				DC4AFCA91AE33DE3000B2CC4 /* FRBServer.m */,
 			);
 			path = "furby-translator";
 			sourceTree = "<group>";
@@ -156,6 +150,28 @@
 				DC4AFC971AE2DADC000B2CC4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC4AFCAB1AE33E81000B2CC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AFCAC1AE33E81000B2CC4 /* FRBJsonParser.h */,
+				DC4AFCAD1AE33E81000B2CC4 /* FRBJsonParser.m */,
+				DC4AFCAE1AE33E81000B2CC4 /* FRBServer.h */,
+				DC4AFCAF1AE33E81000B2CC4 /* FRBServer.m */,
+				DC4AFCB01AE33E81000B2CC4 /* FRBWord.h */,
+				DC4AFCB11AE33E81000B2CC4 /* FRBWord.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC4AFCB51AE33EDF000B2CC4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AFCB61AE33EDF000B2CC4 /* FRBViewController.h */,
+				DC4AFCB71AE33EDF000B2CC4 /* FRBViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,12 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4AFC851AE2DADC000B2CC4 /* FRBViewController.m in Sources */,
+				DC4AFCB31AE33E81000B2CC4 /* FRBServer.m in Sources */,
+				DC4AFCB41AE33E81000B2CC4 /* FRBWord.m in Sources */,
 				DC4AFC821AE2DADC000B2CC4 /* FRBAppDelegate.m in Sources */,
 				DC4AFC7F1AE2DADB000B2CC4 /* main.m in Sources */,
-				DC4AFCA41AE2DCA9000B2CC4 /* FRBJsonParser.m in Sources */,
-				DC4AFCA71AE2DF57000B2CC4 /* FRBWord.m in Sources */,
-				DC4AFCAA1AE33DE3000B2CC4 /* FRBServer.m in Sources */,
+				DC4AFCB21AE33E81000B2CC4 /* FRBJsonParser.m in Sources */,
+				DC4AFCB81AE33EDF000B2CC4 /* FRBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
