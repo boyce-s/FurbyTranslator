@@ -10,11 +10,14 @@
 #import "FRBWord.h"
 #import "FRBViewController.h"
 
+static NSString *const kFRBSearchNoResultsText = @"No Results";
+
 @interface FRBViewController ()
 
 @property(nonatomic, strong) NSArray *words;
 @property(weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property(weak, nonatomic) IBOutlet UIButton *searchButton;
+@property(weak, nonatomic) IBOutlet UILabel *searchResultsLabel;
 
 @end
 
@@ -40,13 +43,15 @@
   NSString *stringToTranslate = self.searchTextField.text;
 
   for (FRBWord *word in self.words) {
-    if ([word.english isEqualToString:stringToTranslate]) {
+    if ([[word.english lowercaseString]
+            isEqualToString:[stringToTranslate lowercaseString]]) {
       NSLog(@"%@ = %@", stringToTranslate, word.furbish);
+      self.searchResultsLabel.text = word.furbish;
       return;
     }
   }
 
-  NSLog(@"Not found");
+  self.searchResultsLabel.text = kFRBSearchNoResultsText;
 }
 
 @end

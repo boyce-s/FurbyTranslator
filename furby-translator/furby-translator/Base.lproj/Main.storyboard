@@ -17,12 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uM-X4-DhG">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uM-X4-DhG" userLabel="Search Text Field">
                                 <rect key="frame" x="16" y="32" width="512" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXZ-wx-MKT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXZ-wx-MKT" userLabel="Search Button">
                                 <rect key="frame" x="536" y="32" width="48" height="30"/>
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,13 +31,24 @@
                                     <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPg-YD-ZoB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Found" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZA-5j-tak" userLabel="Results Label">
+                                <rect key="frame" x="259" y="78" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9uM-X4-DhG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Zs-BI-HmY"/>
+                            <constraint firstAttribute="centerX" secondItem="cZA-5j-tak" secondAttribute="centerX" id="BEt-Tv-PlJ"/>
+                            <constraint firstItem="cZA-5j-tak" firstAttribute="centerX" secondItem="MXZ-wx-MKT" secondAttribute="centerX" constant="-260" id="FBW-uN-pOw"/>
                             <constraint firstItem="9uM-X4-DhG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="HaI-4g-zck"/>
+                            <constraint firstItem="cZA-5j-tak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U4M-xf-FBr"/>
+                            <constraint firstItem="cZA-5j-tak" firstAttribute="top" secondItem="9uM-X4-DhG" secondAttribute="bottom" constant="16" id="XHJ-yz-yRz"/>
                             <constraint firstItem="MXZ-wx-MKT" firstAttribute="top" secondItem="9uM-X4-DhG" secondAttribute="top" id="YOC-2q-6Kq"/>
                             <constraint firstAttribute="centerX" secondItem="9uM-X4-DhG" secondAttribute="centerX" id="lNZ-vP-QyR"/>
+                            <constraint firstItem="cZA-5j-tak" firstAttribute="centerX" secondItem="9uM-X4-DhG" secondAttribute="centerX" id="mo3-fY-Ii2"/>
                             <constraint firstItem="MXZ-wx-MKT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nXC-1q-bch"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9uM-X4-DhG" secondAttribute="trailing" constant="56" id="ojc-RX-Mwp"/>
                             <constraint firstAttribute="centerY" secondItem="9uM-X4-DhG" secondAttribute="centerY" id="r9U-6W-bV9"/>
@@ -46,12 +57,16 @@
                             <mask key="constraints">
                                 <exclude reference="lNZ-vP-QyR"/>
                                 <exclude reference="r9U-6W-bV9"/>
+                                <exclude reference="FBW-uN-pOw"/>
+                                <exclude reference="U4M-xf-FBr"/>
+                                <exclude reference="mo3-fY-Ii2"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Furby Translator" id="8ea-zg-hX3"/>
                     <connections>
                         <outlet property="searchButton" destination="MXZ-wx-MKT" id="Y8s-aO-Juw"/>
+                        <outlet property="searchResultsLabel" destination="cZA-5j-tak" id="dul-A9-YFw"/>
                         <outlet property="searchTextField" destination="9uM-X4-DhG" id="BfV-8Y-fcH"/>
                     </connections>
                 </viewController>
