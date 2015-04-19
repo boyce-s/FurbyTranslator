@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-furby-translator-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-furby-translator-HNKServerFacade.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-furby-translator-Mantle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-furby-translator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9F92FB182048C4B39040FC0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3C43DC8F827A5A664A55002</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C1CD0C9DE44C2AE0EC36D4B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F17D780F5BFB36EA6E44FC1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

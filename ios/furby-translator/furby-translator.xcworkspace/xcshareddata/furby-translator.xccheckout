@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>64BA4D9E-BE9D-404A-9BCB-D04B74D61D89</string>
+	<key>IDESourceControlProjectName</key>
+	<string>furby-translator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>314EE1E2A4EEF6E5CC9F2825D154F7E1F34958E2</key>
+		<string>https://github.com/boycesusan/FurbyTranslator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>furby-translator/furby-translator.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>314EE1E2A4EEF6E5CC9F2825D154F7E1F34958E2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/boycesusan/FurbyTranslator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>314EE1E2A4EEF6E5CC9F2825D154F7E1F34958E2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>314EE1E2A4EEF6E5CC9F2825D154F7E1F34958E2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FurbyTranslator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+PODS_FURBY_TRANSLATOR_MANTLE_OTHER_LDFLAGS = -framework "Foundation"
