@@ -13,7 +13,7 @@
 /**
  *  Returns an array of Words created from json
  *
- *  @param json json to translate into Words
+ *  @param json JSON to translate into Words
  *
  *  @return Array of Words
  */

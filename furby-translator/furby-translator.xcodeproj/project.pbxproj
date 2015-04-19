@@ -155,10 +155,9 @@
 		DC4AFCAB1AE33E81000B2CC4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC4AFCB91AE33FD4000B2CC4 /* Networking */,
 				DC4AFCAC1AE33E81000B2CC4 /* FRBJsonParser.h */,
 				DC4AFCAD1AE33E81000B2CC4 /* FRBJsonParser.m */,
-				DC4AFCAE1AE33E81000B2CC4 /* FRBServer.h */,
-				DC4AFCAF1AE33E81000B2CC4 /* FRBServer.m */,
 				DC4AFCB01AE33E81000B2CC4 /* FRBWord.h */,
 				DC4AFCB11AE33E81000B2CC4 /* FRBWord.m */,
 			);
@@ -172,6 +171,15 @@
 				DC4AFCB71AE33EDF000B2CC4 /* FRBViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DC4AFCB91AE33FD4000B2CC4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AFCAE1AE33E81000B2CC4 /* FRBServer.h */,
+				DC4AFCAF1AE33E81000B2CC4 /* FRBServer.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
