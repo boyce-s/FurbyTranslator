@@ -18,6 +18,7 @@
 		DC4AFCB31AE33E81000B2CC4 /* FRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCAF1AE33E81000B2CC4 /* FRBServer.m */; };
 		DC4AFCB81AE33EDF000B2CC4 /* FRBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCB71AE33EDF000B2CC4 /* FRBViewController.m */; };
 		DC4AFCBF1AE3456B000B2CC4 /* FRBKimonoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AFCBE1AE3456B000B2CC4 /* FRBKimonoResponse.m */; };
+		DCB391011AE35A60004344D8 /* furby.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB391001AE35A60004344D8 /* furby.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		DC4AFCB71AE33EDF000B2CC4 /* FRBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBViewController.m; sourceTree = "<group>"; };
 		DC4AFCBD1AE3456B000B2CC4 /* FRBKimonoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBKimonoResponse.h; sourceTree = "<group>"; };
 		DC4AFCBE1AE3456B000B2CC4 /* FRBKimonoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBKimonoResponse.m; sourceTree = "<group>"; };
+		DCB391001AE35A60004344D8 /* furby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = furby.png; sourceTree = "<group>"; };
 		E6B0D4FBB3408C63D090EE22 /* Pods-furby-translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-furby-translator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-furby-translator/Pods-furby-translator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DC4AFCAB1AE33E81000B2CC4 /* Models */,
+				DCB390FF1AE359FB004344D8 /* Reources */,
 				DC4AFCB51AE33EDF000B2CC4 /* ViewControllers */,
 				DC4AFC801AE2DADB000B2CC4 /* FRBAppDelegate.h */,
 				DC4AFC811AE2DADC000B2CC4 /* FRBAppDelegate.m */,
@@ -180,6 +183,14 @@
 				DC4AFCAF1AE33E81000B2CC4 /* FRBServer.m */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		DCB390FF1AE359FB004344D8 /* Reources */ = {
+			isa = PBXGroup;
+			children = (
+				DCB391001AE35A60004344D8 /* furby.png */,
+			);
+			name = Reources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB391011AE35A60004344D8 /* furby.png in Resources */,
 				DC4AFC881AE2DADC000B2CC4 /* Main.storyboard in Resources */,
 				DC4AFC8D1AE2DADC000B2CC4 /* LaunchScreen.xib in Resources */,
 				DC4AFC8A1AE2DADC000B2CC4 /* Images.xcassets in Resources */,
