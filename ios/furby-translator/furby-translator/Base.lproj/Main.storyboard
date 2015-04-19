@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Roh-O5-nC7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Furby Translator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FRBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uM-X4-DhG" userLabel="Search Text Field">
+                                <rect key="frame" x="16" y="32" width="512" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXZ-wx-MKT" userLabel="Search Button">
+                                <rect key="frame" x="536" y="32" width="48" height="30"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPg-YD-ZoB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Found" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZA-5j-tak" userLabel="Results Label">
+                                <rect key="frame" x="259" y="78" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="furby.png" translatesAutoresizingMaskIntoConstraints="NO" id="uLO-iP-90k" userLabel="Furby Image">
+                                <rect key="frame" x="200" y="131" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="JDb-Ge-ind"/>
+                                    <constraint firstAttribute="width" constant="300" id="LCn-26-1uZ"/>
+                                    <constraint firstAttribute="width" secondItem="uLO-iP-90k" secondAttribute="height" multiplier="1:1" id="ebF-hC-FgX"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LCn-26-1uZ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9uM-X4-DhG" firstAttribute="centerY" secondItem="uLO-iP-90k" secondAttribute="centerY" id="0hC-Hy-83t"/>
+                            <constraint firstItem="uLO-iP-90k" firstAttribute="top" secondItem="cZA-5j-tak" secondAttribute="bottom" constant="32" id="1nU-XR-z8s"/>
+                            <constraint firstItem="9uM-X4-DhG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Zs-BI-HmY"/>
+                            <constraint firstItem="uLO-iP-90k" firstAttribute="centerX" secondItem="cZA-5j-tak" secondAttribute="centerX" id="5hv-bB-qeY"/>
+                            <constraint firstItem="uLO-iP-90k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Vj-gV-N7X"/>
+                            <constraint firstAttribute="centerX" secondItem="cZA-5j-tak" secondAttribute="centerX" id="BEt-Tv-PlJ"/>
+                            <constraint firstItem="cZA-5j-tak" firstAttribute="centerX" secondItem="MXZ-wx-MKT" secondAttribute="centerX" constant="-260" id="FBW-uN-pOw"/>
+                            <constraint firstItem="9uM-X4-DhG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="HaI-4g-zck"/>
+                            <constraint firstItem="cZA-5j-tak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U4M-xf-FBr"/>
+                            <constraint firstItem="cZA-5j-tak" firstAttribute="top" secondItem="9uM-X4-DhG" secondAttribute="bottom" constant="16" id="XHJ-yz-yRz"/>
+                            <constraint firstItem="MXZ-wx-MKT" firstAttribute="top" secondItem="9uM-X4-DhG" secondAttribute="top" id="YOC-2q-6Kq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uLO-iP-90k" secondAttribute="bottom" constant="118" id="dAN-vN-GrZ"/>
+                            <constraint firstAttribute="centerX" secondItem="9uM-X4-DhG" secondAttribute="centerX" id="lNZ-vP-QyR"/>
+                            <constraint firstItem="uLO-iP-90k" firstAttribute="top" secondItem="cZA-5j-tak" secondAttribute="bottom" id="lpL-VQ-gIa"/>
+                            <constraint firstItem="cZA-5j-tak" firstAttribute="centerX" secondItem="9uM-X4-DhG" secondAttribute="centerX" id="mo3-fY-Ii2"/>
+                            <constraint firstItem="MXZ-wx-MKT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nXC-1q-bch"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9uM-X4-DhG" secondAttribute="trailing" constant="56" id="ojc-RX-Mwp"/>
+                            <constraint firstItem="uLO-iP-90k" firstAttribute="top" secondItem="9uM-X4-DhG" secondAttribute="bottom" constant="56" id="qsO-Z0-cKH"/>
+                            <constraint firstAttribute="centerY" secondItem="9uM-X4-DhG" secondAttribute="centerY" id="r9U-6W-bV9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0hC-Hy-83t"/>
+                                <exclude reference="lNZ-vP-QyR"/>
+                                <exclude reference="r9U-6W-bV9"/>
+                                <exclude reference="7Vj-gV-N7X"/>
+                                <exclude reference="lpL-VQ-gIa"/>
+                                <exclude reference="qsO-Z0-cKH"/>
+                                <exclude reference="FBW-uN-pOw"/>
+                                <exclude reference="U4M-xf-FBr"/>
+                                <exclude reference="mo3-fY-Ii2"/>
+                                <exclude reference="dAN-vN-GrZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Furby Translator" id="8ea-zg-hX3"/>
+                    <connections>
+                        <outlet property="searchButton" destination="MXZ-wx-MKT" id="Y8s-aO-Juw"/>
+                        <outlet property="searchResultsLabel" destination="cZA-5j-tak" id="dul-A9-YFw"/>
+                        <outlet property="searchTextField" destination="9uM-X4-DhG" id="BfV-8Y-fcH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xyK-Me-Yqm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Roh-O5-nC7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="kdL-7Y-Ru0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.74901960779999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PQI-Uh-zJS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C52-iA-AS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="-434"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="furby.png" width="928" height="988"/>
+    </resources>
+</document>
