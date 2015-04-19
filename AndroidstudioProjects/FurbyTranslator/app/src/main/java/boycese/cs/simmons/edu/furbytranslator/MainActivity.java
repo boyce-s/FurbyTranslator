@@ -5,6 +5,8 @@ package boycese.cs.simmons.edu.furbytranslator;
  */
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+
+import java.nio.charset.Charset;
 import java.util.*;
 import java.io.*;
 import android.view.Menu;
@@ -17,6 +19,7 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
+    // creates "dictionary" of hardcoded word objects that we would have been retrieving from the JSON return from our "API"
     Word affirmative = new Word("affirmative", "ee");
     Word again = new Word("again", "koh-koh");
     Word and = new Word("and", "koh");
@@ -62,23 +65,23 @@ public class MainActivity extends ActionBarActivity {
     Word  goodNight = new Word("good night", "dah-ay-loh-nah-bah");
     Word  happy = new Word("happy", "noo-loo");
     Word  have = new Word("have", "ah-mah");
-            Word  health = new Word("health", "koo-doh");
-            Word  healthy = new Word("healthy", "koo-doh");
-            Word  help = new Word("help", "ah-noo");
-            Word  hide = new Word("hide", "woo-bye");
-            Word  high = new Word("high", "oo-tah");
-            Word  hmm = new Word("hmm?", "doo?");
-            Word  home = new Word("home", "lay-lah");
-            Word  hug = new Word("hug", "may-lah");
-            Word  huh = new Word("huh?", "doo?");
-            Word  hungry = new Word("hungry", "ay-tay");
-            Word  eat = new Word("eat", "ay-tay");
-            Word  why = new Word("why", "doo");
-            Word  interrogative = new Word("interrogative", "doo");
-            Word  island = new Word("island", "koo-wah");
-            Word  kiss = new Word("kiss", "may-tah");
-            Word  life = new Word("life", "tee");
-            Word  light = new Word("light", "ay-loh");
+    Word  health = new Word("health", "koo-doh");
+    Word  healthy = new Word("healthy", "koo-doh");
+    Word  help = new Word("help", "ah-noo");
+    Word  hide = new Word("hide", "woo-bye");
+    Word  high = new Word("high", "oo-tah");
+    Word  hmm = new Word("hmm?", "doo?");
+    Word  home = new Word("home", "lay-lah");
+    Word  hug = new Word("hug", "may-lah");
+    Word  huh = new Word("huh?", "doo?");
+    Word  hungry = new Word("hungry", "ay-tay");
+    Word  eat = new Word("eat", "ay-tay");
+    Word  why = new Word("why", "doo");
+    Word  interrogative = new Word("interrogative", "doo");
+    Word  island = new Word("island", "koo-wah");
+    Word  kiss = new Word("kiss", "may-tah");
+    Word  life = new Word("life", "tee");
+    Word  light = new Word("light", "ay-loh");
             Word  lightness = new Word("lightness", "ay");
             Word  like = new Word("like", "toh-loo");
             Word  listen = new Word("listen", "ay-ay-lee-koo");
@@ -150,12 +153,19 @@ public class MainActivity extends ActionBarActivity {
     Word  yes = new Word("yes", "ee-tay");
     Word  you = new Word("you", "oo-nye");
 
+    // create list to store dictionary terms in to make them searchable
     List<Word> testList = new ArrayList<>();
 
 
+    /*
+    this is where we would enter the info for the parser that would work through the JSON return from the "API"
+    currently is set up to accept a string of JSON output to convert to object ByteArrayInputStream() to give readJsonStream() etc.
+     */
+    /*
     JSON_parse parser = new JSON_parse();
     //public static final String JSON_FILE = "english_furbish_ae.json";
     public static final String JSON_FILE = "[{\"english\":\"another\",\"furbish\":\"koh-koh\"},{\"english\":\"ask\",\"furbish\":\"oh-too-mah\"},{\"english\":\"baby\",\"furbish\":\"bay-bee\"},{\"english\":\"bad\",\"furbish\":\"boo-dah\"}]";
+    */
 
 
     @Override
@@ -163,7 +173,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //testList.add(you);
+        // here we are pushing our "dictionary" of Word objects into a list that we can search and retrieve from
         testList.add(yes);
         testList.add(yeah);
         testList.add(yay);
@@ -301,14 +311,19 @@ public class MainActivity extends ActionBarActivity {
         testList.add(listen);
 
 
-
+        /* // here is where we turn a string into a stream that we can call JsonReader() with, which currently may or may
+           // not work, the error messages are unclear (e.g. whether the string convert or JSON_parse methods)
         try {
             InputStream fis = new FileInputStream(JSON_FILE);
-            parser.readJsonStream(fis);
+              parser.readJsonStream(fis);
+            // http://stackoverflow.com/questions/247161/how-do-i-turn-a-string-into-a-stream-in-java
+            InputStream is = new ByteArrayInputStream( JSON_FILE.getBytes(Charset.defaultCharset() ) );
+            parser.readJsonStream(is);
             System.out.println("Successfully read input steam");
         } catch(IOException e) {
             System.out.println(e.getMessage());
             System.out.println("Couldn't read in input stream"); }
+        */
 
         Collections.sort(testList);
     }
@@ -337,14 +352,13 @@ public class MainActivity extends ActionBarActivity {
     }
 
     // event onClick for submit button
-
     public void submit(View view) {
     /*
-        finds the user's English search term from the View, calls search, prints to screen
+        finds the user's English search term from the View, calls search, prints translated result to screen
     */
         EditText userInputA = (EditText)findViewById(R.id.searchInput);
-        String userInput = userInputA.getText().toString();
-        userInput = userInput.toLowerCase();
+        String userInput = userInputA.getText().toString(); // turn EditText value into a string we can act on
+        userInput = userInput.toLowerCase(); // makes user's input case insensitive
 
         TextView translation = (TextView)findViewById(R.id.translation_result);
 
@@ -366,7 +380,6 @@ public class MainActivity extends ActionBarActivity {
      */
 
          // search for the userInput in the array on Word.english
-
         Comparator<Word> comp = new Comparator<Word>() {
             @Override
             public int compare(Word word1, Word word2) {
@@ -375,8 +388,9 @@ public class MainActivity extends ActionBarActivity {
         };
 
         int index = Collections.binarySearch(testList, new Word(userInput, null), comp);
+
         // access (& return) Word.furbish for the Word.english that the above matched
-        // otherwise return not found
+        // otherwise return null so that we know to print Not found
         if(index < 0) { return null; }
         else { return testList.get(index).getFurbish(); }
 
