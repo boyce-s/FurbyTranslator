@@ -40,7 +40,10 @@ public class MainActivity extends ActionBarActivity {
         try {
             InputStream fis = new FileInputStream(JSON_FILE);
             parser.readJsonStream(fis);
-        } catch(Exception e) { }
+            System.out.println("Successfully read input steam");
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+            System.out.println("Couldn't read in input stream"); }
 
         Collections.sort(testList);
     }
