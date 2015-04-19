@@ -78,6 +78,7 @@ public class MainActivity extends ActionBarActivity {
     */
         EditText userInputA = (EditText)findViewById(R.id.searchInput);
         String userInput = userInputA.getText().toString();
+        userInput = userInput.toLowerCase();
 
         TextView translation = (TextView)findViewById(R.id.translation_result);
 

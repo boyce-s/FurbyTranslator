@@ -1,27 +1,40 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/furbyFriend"
+        android:src="@drawable/furby"
+        android:nestedScrollingEnabled="false"
+        android:layout_above="@+id/searchSubmit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="71dp" /> <!-- http://ecx.images-amazon.com/images/I/61Bau+Zh+gL.jpg -->
+
     <TextView android:text="@string/translation" android:layout_width="wrap_content"
+        android:textSize= "50sp"
         android:layout_height="wrap_content"
         android:id="@+id/translation_result"
         android:singleLine="true"
-        android:layout_marginTop="49dp"
-        android:layout_below="@+id/searchSubmit"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/furbyFriend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/searchInput"
-        android:layout_alignTop="@+id/searchSubmit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/translation_result"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/searchSubmit"
-        android:layout_toStartOf="@+id/searchSubmit" />
+        android:layout_alignParentStart="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -30,8 +43,8 @@
         android:text="@string/submit_button"
         android:id="@+id/searchSubmit"
         android:onClick="submit"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginBottom="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
